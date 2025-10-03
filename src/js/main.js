@@ -22,7 +22,7 @@
     <div id="successModal" class="invisible opacity-0 fixed inset-0 z-50 grid place-items-center bg-black/40 transition-opacity p-4" aria-hidden="true" role="dialog" aria-labelledby="successTitle" aria-modal="true">
       <div class="w-full max-w-[647px] bg-white rounded-2xl shadow-[0px_0px_15px_-2px_rgba(0,0,0,0.25)] p-5 md:p-8 flex items-center justify-center max-h-[85vh] overflow-y-auto">
         <div class="w-full md:w-[580px] inline-flex flex-col justify-start items-center gap-8 md:gap-12">
-          <div class="p-2 rounded-3xl shadow-[0px_12px_28px_0px_rgba(0,0,0,0.04)] inline-flex justify-center items-center gap-2.5" style="background-color: #BBBBBB;">
+          <div class="p-2 rounded-3xl shadow-[0px_12px_28px_0px_rgba(0,0,0,0.04)] inline-flex justify-center items-center gap-2.5" style="background-color: #f6f6f6;">
             <div class="w-6 h-6 relative overflow-hidden">
               <img src="src/assets/images/check.png" alt="Sucesso" class="w-6 h-6" />
             </div>
@@ -52,14 +52,14 @@
     <div id="unavailableModal" class="invisible opacity-0 fixed inset-0 z-50 grid place-items-center bg-black/40 transition-opacity p-4" aria-hidden="true" role="dialog" aria-labelledby="unavailableTitle" aria-modal="true">
       <div class="w-full max-w-[647px] bg-white rounded-2xl shadow-[0px_0px_15px_-2px_rgba(0,0,0,0.25)] p-5 md:p-8 flex items-center justify-center max-h-[85vh] overflow-y-auto">
         <div class="w-full md:w-[580px] inline-flex flex-col justify-start items-center gap-8 md:gap-12">
-          <div class="p-2 rounded-3xl shadow-[0px_12px_28px_0px_rgba(0,0,0,0.04)] inline-flex justify-center items-center gap-2.5" style="background-color: #BBBBBB;">
+          <div class="p-2 rounded-3xl shadow-[0px_12px_28px_0px_rgba(0,0,0,0.04)] inline-flex justify-center items-center gap-2.5" style="background-color: #f6f6f6;">
             <div class="w-6 h-6 relative overflow-hidden">
               <img src="src/assets/images/check.png" alt="Indisponível" class="w-6 h-6" />
             </div>
           </div>
           <div class="self-stretch flex flex-col justify-start items-start gap-3 md:gap-5">
             <div id="unavailableTitle" class="self-stretch text-center justify-start text-Defaults-Texts text-xl md:text-2xl font-bold font-['Poppins'] leading-7 tracking-tight">Indisponível no momento</div>
-            <div class="self-stretch text-center justify-start text-Defaults-Secondary-text text-sm md:text-base font-normal font-['Poppins'] leading-normal tracking-tight">Este recurso está temporariamente indisponível. Tente novamente mais tarde.</div>
+            <div class="self-stretch text-center justify-start text-Defaults-Secondary-text text-sm md:text-base font-normal font-['Poppins'] leading-normal tracking-tight">Este recurso está temporariamente indisponível.</div>
           </div>
           <button id="closeUnavailable" class="w-full sm:w-80 min-w-12 min-h-12 px-6 md:px-20 rounded-[3px] outline outline-1 outline-offset-[-1px] outline-bmw-gray04 inline-flex justify-center items-center overflow-hidden">
             <div class="flex justify-start items-center gap-1">
@@ -117,7 +117,7 @@
       if (el.type === 'checkbox') {
         error = !el.checked;
       } else if (el.tagName === 'SELECT') {
-        error = !el.value;
+        error = !el.value || el.value === '';
       } else {
         error = !el.value || (el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value));
       }
