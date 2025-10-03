@@ -1,0 +1,49 @@
+<header class="sticky top-0 z-40 bg-white">
+  <!-- Wrapper no padrão do snippet em xl, fluido abaixo -->
+  <div class="mx-auto w-full max-w-[1920px] 2xl:max-w-[2200px] px-6 md:px-10 lg:px-20 xl:px-28 2xl:px-[120px] bg-white inline-flex flex-col justify-center items-center">
+    <div class="w-full mx-auto inline-flex justify-between items-center h-16 md:h-[90px] xl:h-[90px] overflow-x-hidden">
+      <!-- Logo (imagem) -->
+      <div class="w-14 h-15 relative overflow-hidden flex items-center justify-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="Alpes BMW" class="h-8 w-8" />
+      </div>
+      <!-- Menu central -->
+      <div class="flex-1 flex justify-end items-center">
+        <nav aria-label="Principal" class="hidden xl:block">
+          <ul class="flex items-center text-bmw-gray03 text-base leading-normal tracking-tight">
+            <li><a class="px-3 py-4 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Novos</a></li>
+            <li><a class="px-3 py-4 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Seminovos</a></li>
+            <li><a class="px-3 py-4 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Pós Vendas</a></li>
+            <li><a class="px-3 py-4 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Peças e Acessórios</a></li>
+            <li><a class="px-3 py-4 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Eventos</a></li>
+            <li><a class="px-3 py-4 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Sobre Nós</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Área direita 476px -->
+      <div class="hidden xl:flex w-[476px] justify-end items-center gap-2">
+        <a class="px-3 py-4 inline-flex items-center gap-2.5 cursor-pointer select-none transition active:scale-95" data-open="unavailable"><span class="text-bmw-gray03 text-base leading-relaxed">Localização</span></a>
+        <a class="px-3 py-4 inline-flex items-center gap-2.5 cursor-pointer select-none transition active:scale-95" data-open="unavailable"><span class="text-bmw-gray03 text-base leading-relaxed">Telefones</span></a>
+        <a class="px-3 py-4 inline-flex items-center gap-2.5 cursor-pointer select-none transition active:scale-95" data-open="unavailable"><span class="text-bmw-gray03 text-base leading-relaxed">WhatsApp</span></a>
+      </div>
+      <button id="menuBtn" class="xl:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-neutral-200 text-neutral-700 hover:bg-neutral-50" aria-expanded="false" aria-controls="menuMobile" aria-label="Abrir menu"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div class="w-full h-px bg-zinc-400"></div>
+    
+  </div>
+  <!-- Menu mobile -->
+  <nav id="menuMobile" class="hidden xl:hidden border-b border-neutral-200 bg-white" aria-label="Menu móvel">
+    <ul class="py-3 grid grid-cols-2 gap-2 text-sm px-6 md:px-10 lg:px-20 xl:px-28 2xl:px-[120px]">
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">Novos</a></li>
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">Seminovos</a></li>
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">Pós Vendas</a></li>
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">Peças e Acessórios</a></li>
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">Eventos</a></li>
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">Sobre Nós</a></li>
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">Localização</a></li>
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">Telefones</a></li>
+      <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95" href="#" data-open="unavailable">WhatsApp</a></li>
+    </ul>
+  </nav>
+</header>
+
+
