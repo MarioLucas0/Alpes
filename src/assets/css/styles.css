@@ -3,6 +3,11 @@
   --ring: 0 0 #0000;
 }
 
+/* Ensure entire page has white background */
+html, body {
+  background-color: #ffffff !important;
+}
+
 /* Reusable input style without @apply (no preprocessor required) */
 .form-input {
   width: 100%;
