@@ -84,7 +84,7 @@
     });
   }
 
-  const phoneInput = document.getElementById('telefone');
+  const phoneInput = document.getElementById('phone');
   if (phoneInput) {
     phoneInput.addEventListener('input', () => {
       let v = phoneInput.value.replace(/\D/g, '');
@@ -108,7 +108,7 @@
   }
 
   function validateForm() {
-    const fields = ['nome', 'email', 'telefone', 'assunto', 'mensagem', 'privacy'];
+    const fields = ['name', 'email', 'phone', 'subject', 'message', 'privacy'];
     let valid = true;
     fields.forEach((id) => {
       const el = document.getElementById(id);
@@ -148,7 +148,6 @@
     if (e.target === modal) closeModal();
   });
 
-  // Unavailable modal helpers
   function openUnavailable() {
     unavailableModal.classList.add('modal-open');
     unavailableModal.setAttribute('aria-hidden', 'false');
@@ -166,7 +165,6 @@
     if (e.target === unavailableModal) closeUnavailable();
   });
 
-  // Bind triggers for unavailable modal
   document.querySelectorAll('[data-open="unavailable"]').forEach((el) => {
     el.addEventListener('click', (ev) => {
       ev.preventDefault();
@@ -183,7 +181,6 @@
         return;
       }
 
-      // Simula envio
       statusEl.textContent = 'Enviando…';
       setTimeout(() => {
         form.reset();
@@ -194,7 +191,7 @@
   }
   }
 
-  // Kickoff: load partials then init UI
+  
   loadPartials().then(initUI);
 })();
 

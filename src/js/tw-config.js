@@ -1,4 +1,3 @@
-// Tailwind config extracted from inline for organization
 window.tailwind = window.tailwind || {};
 window.tailwind.config = {
   theme: {
