@@ -1,15 +1,4 @@
 (function () {
-  async function loadPartials() {
-    const [header, content, footer] = await Promise.all([
-      fetch('src/partials/header.html').then(r => r.text()),
-      fetch('src/partials/contact.html').then(r => r.text()),
-      fetch('src/partials/footer.html').then(r => r.text())
-    ]);
-    document.getElementById('partial-header').innerHTML = header;
-    document.getElementById('partial-content').innerHTML = content + document.getElementById('partial-content').innerHTML;
-    document.getElementById('partial-footer').innerHTML = footer;
-  }
-
   function initUI() {
   const menuBtn = document.getElementById('menuBtn');
   const menuMobile = document.getElementById('menuMobile');
@@ -191,8 +180,9 @@
   }
   }
 
-  
-  loadPartials().then(initUI);
+  // Como o script já tem 'defer', o DOM estará pronto.
+  // Apenas chamamos a função initUI diretamente.
+  initUI();
 })();
 
 
