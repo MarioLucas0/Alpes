@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato — Alpes BMW</title>
+    <meta name="description" content="Entre em contato conosco. Preencha o formulário para falar com a Alpes BMW." />
+
+    <script src="src/js/tw-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/assets/css/styles.css" />
+  </head>
+  <body class="min-h-screen bg-neutral-50 text-neutral-800 antialiased">
+    <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow">Pular para o conteúdo</a>
+
+    <header class="sticky top-0 z-40 bg-white">
+      <div class="mx-auto w-full max-w-[1920px] 2xl:max-w-[2200px] px-6 md:px-10 lg:px-20 xl:px-28 2xl:px-[120px] bg-white inline-flex flex-col justify-center items-center">
+        <div class="w-full mx-auto inline-flex justify-between items-center pt-3 pb-3 overflow-x-hidden">
+          <div class="w-15 h-15 relative overflow-hidden flex items-center justify-center">
+            <a href="#" aria-label="Alpes BMW - Página inicial">
+              <img src="src/assets/images/BMW (1).svg" alt="Alpes BMW" class="w-15 h-15" />
+            </a>
+          </div>
+          <div class="flex-1 flex justify-end items-center">
+            <nav aria-label="Principal" class="hidden xl:block">
+              <ul class="flex items-center text-base font-['Poppins'] font-normal leading-normal tracking-tight" style="color: #999999;">
+                <li><a class="px-3 py-7.5 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Novos</a></li>
+                <li><a class="px-3 py-7.5 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Seminovos</a></li>
+                <li><a class="px-3 py-7.5 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Pós Vendas</a></li>
+                <li><a class="px-3 py-7.5 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Peças e Acessórios</a></li>
+                <li><a class="px-3 py-7.5 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Eventos</a></li>
+                <li><a class="px-3 py-7.5 block cursor-pointer select-none transition active:scale-95" data-open="unavailable">Sobre Nós</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hidden xl:flex w-[476px] justify-end items-center gap-2">
+            <a class="px-3 py-7.5 inline-flex items-center gap-2.5 cursor-pointer select-none transition active:scale-95" data-open="unavailable">
+              <img src="src/assets/images/map pin.png" alt="Localização" class="w-4 h-4" />
+              <span class="text-base font-['Poppins'] font-normal leading-relaxed" style="color: #999999;">Localização</span>
+            </a>
+            <a class="px-3 py-7.5 inline-flex items-center gap-2.5 cursor-pointer select-none transition active:scale-95" data-open="unavailable">
+              <img src="src/assets/images/phone.png" alt="Telefones" class="w-4 h-4" />
+              <span class="text-base font-['Poppins'] font-normal leading-relaxed" style="color: #999999;">Telefones</span>
+            </a>
+            <a class="px-3 py-7.5 inline-flex items-center gap-2.5 cursor-pointer select-none transition active:scale-95" data-open="unavailable">
+              <img src="src/assets/images/whatsapp.png" alt="WhatsApp" class="w-4 h-4" />
+              <span class="text-base font-['Poppins'] font-normal leading-relaxed" style="color: #999999;">WhatsApp</span>
+            </a>
+          </div>
+          <button id="menuBtn" class="xl:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-neutral-200 text-neutral-700 hover:bg-neutral-50" aria-expanded="false" aria-controls="menuMobile" aria-label="Abrir menu"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+        <div style="align-self: stretch; height: 1px; background: #BBBBBB;"></div>
+        
+      </div>
+      <nav id="menuMobile" class="hidden xl:hidden border-b border-neutral-200 bg-white" aria-label="Menu móvel">
+        <ul class="py-3 grid grid-cols-2 gap-2 text-sm px-6 md:px-10 lg:px-20 xl:px-28 2xl:px-[120px]">
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 text-base font-['Poppins'] font-normal leading-normal" style="color: #999999;" href="#" data-open="unavailable">Novos</a></li>
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 text-base font-['Poppins'] font-normal leading-normal" style="color: #999999;" href="#" data-open="unavailable">Seminovos</a></li>
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 text-base font-['Poppins'] font-normal leading-normal" style="color: #999999;" href="#" data-open="unavailable">Pós Vendas</a></li>
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 text-base font-['Poppins'] font-normal leading-normal" style="color: #999999;" href="#" data-open="unavailable">Peças e Acessórios</a></li>
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 text-base font-['Poppins'] font-normal leading-normal" style="color: #999999;" href="#" data-open="unavailable">Eventos</a></li>
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 text-base font-['Poppins'] font-normal leading-normal" style="color: #999999;" href="#" data-open="unavailable">Sobre Nós</a></li>
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 flex items-center gap-2 text-base font-['Poppins'] font-normal leading-relaxed" style="color: #999999;" href="#" data-open="unavailable"><img src="src/assets/images/map pin.png" alt="Localização" class="w-4 h-4" />Localização</a></li>
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 flex items-center gap-2 text-base font-['Poppins'] font-normal leading-relaxed" style="color: #999999;" href="#" data-open="unavailable"><img src="src/assets/images/phone.png" alt="Telefones" class="w-4 h-4" />Telefones</a></li>
+          <li><a class="block rounded-md px-3 py-2 hover:bg-neutral-100 cursor-pointer select-none active:scale-95 flex items-center gap-2 text-base font-['Poppins'] font-normal leading-relaxed" style="color: #999999;" href="#" data-open="unavailable"><img src="src/assets/images/whatsapp.png" alt="WhatsApp" class="w-4 h-4" />WhatsApp</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content" class="w-full min-h-screen mx-auto">
+      <section id="contact" class="bg-white" aria-labelledby="contact-title">
+        <div class="w-full max-w-[1920px] mx-auto px-6 md:px-10 lg:px-20 xl:px-96 2xl:px-[120px] py-8 md:py-10 flex flex-col justify-start items-center gap-8 md:gap-12">
+          <h1 id="contact-title" class="w-full xl:w-[1120px] text-center justify-center text-neutral-800 text-2xl md:text-3xl font-light font-bmw uppercase leading-8 md:leading-10">entre em Contato</h1>
+          <form id="contactForm" class="w-full xl:w-[1120px] flex flex-col gap-5 md:gap-6" novalidate>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+              <div class="flex flex-col gap-1">
+                <label for="name" class="sr-only">Nome</label>
+                <input id="name" name="name" type="text" required autocomplete="name" class="w-full h-12 px-4 py-3 bg-white rounded-[4px] border border-[#E8E8E8] text-sm text-[#25282B] placeholder-[#A0A4A8] outline-none ring-0 focus:ring-0" placeholder="Nome" />
+                <p class="mt-1 hidden text-xs text-red-600" data-error-for="name">Informe seu nome.</p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label for="email" class="sr-only">E-mail</label>
+                <input id="email" name="email" type="email" required autocomplete="email" class="w-full h-12 px-4 py-3 bg-white rounded-[4px] border border-[#E8E8E8] text-sm text-[#25282B] placeholder-[#A0A4A8] outline-none ring-0 focus:ring-0" placeholder="E-mail" />
+                <p class="mt-1 hidden text-xs text-red-600" data-error-for="email">Informe um e-mail válido.</p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label for="phone" class="sr-only">Telefone</label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" required class="w-full h-12 px-4 py-3 bg-white rounded-[4px] border border-[#E8E8E8] text-sm text-[#25282B] placeholder-[#A0A4A8] outline-none ring-0 focus:ring-0" placeholder="Telefone" />
+                <p class="mt-1 hidden text-xs text-red-600" data-error-for="phone">Informe seu telefone.</p>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label for="subject" class="sr-only">Assunto</label>
+                <select id="subject" name="subject" required class="w-full h-12 px-4 py-3 bg-white rounded-[4px] border border-[#E8E8E8] text-sm text-[#25282B] outline-none ring-0 focus:ring-0">
+                  <option value="" selected>Selecione</option>
+                  <option>Informações</option>
+                  <option>Agendamento</option>
+                  <option>Orçamento</option>
+                  <option>Outros</option>
+                </select>
+                <p class="mt-1 hidden text-xs text-red-600" data-error-for="subject">Selecione um assunto.</p>
+              </div>
+            </div>
+            <div class="w-full min-h-[160px] flex flex-col gap-1">
+              <label for="message" class="sr-only">Mensagem</label>
+              <textarea id="message" name="message" class="w-full flex-1 p-4 bg-white rounded-[4px] border border-[#E8E8E8] text-sm text-[#25282B] placeholder-[#A0A4A8] outline-none ring-0 focus:ring-0" placeholder="Mensagem" rows="6" required></textarea>
+              <p class="mt-1 hidden text-xs text-red-600" data-error-for="message">Escreva sua mensagem.</p>
+            </div>
+            <div class="w-full xl:w-[1120px] flex flex-col justify-center items-center mx-auto" style="margin-top: 50px;">
+              <div class="flex flex-col gap-1">
+                <label class="inline-flex justify-start items-center gap-2 text-[16px] tracking-tight text-[#25282B]">
+                  <input id="privacy" name="privacy" type="checkbox" required class="h-4 w-4 rounded border-neutral-300 text-primary-600 focus:ring-primary-600" />
+                  <span>Aceito a <a href="#" class="text-blue-600">Política de Privacidade</a></span>
+                </label>
+                <p class="mt-1 hidden text-xs text-red-600" data-error-for="privacy">Você deve aceitar a Política de Privacidade.</p>
+              </div>
+              <div class="w-full flex flex-col items-center" style="margin-top: 40px;">
+                <button type="submit" class="w-72 max-w-72 min-w-44 min-h-12 px-2.5 py-4 bg-blue-600 inline-flex justify-center items-center text-white text-base rounded-sm mx-auto active:scale-95 transition">Enviar</button>
+                <p id="formStatus" class="mt-2 text-sm text-neutral-600" role="status" aria-live="polite"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full" style="background-color: #f6f6f6;" role="contentinfo">
+      <div class="mx-auto w-full 2xl:max-w-[2000px] py-16 inline-flex flex-col justify-start items-center px-6 md:px-10 lg:px-20">
+        <div class="w-full xl:w-[1128px] h-8 inline-flex justify-between items-center">
+          <div class="w-full xl:w-[1128px] h-44 flex justify-start items-center gap-2.5">
+            <nav class="w-[591px] flex justify-start items-start gap-4" aria-label="Redes sociais">
+              <a href="https://www.linkedin.com/in/mariolucas00/" target="_blank" rel="noopener noreferrer" class="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="src/assets/images/instagram.png" alt="Instagram" class="w-6 h-6" />
+              </a>
+              <a href="https://www.linkedin.com/in/mariolucas00/" target="_blank" rel="noopener noreferrer" class="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="src/assets/images/facebook.png" alt="Facebook" class="w-6 h-6" />
+              </a>
+              <a href="https://www.linkedin.com/in/mariolucas00/" target="_blank" rel="noopener noreferrer" class="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="src/assets/images/youtube.png" alt="YouTube" class="w-6 h-6" />
+              </a>
+              <a href="https://www.linkedin.com/in/mariolucas00/" target="_blank" rel="noopener noreferrer" class="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="src/assets/images/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+              </a>
+              <a href="https://www.linkedin.com/in/mariolucas00/" target="_blank" rel="noopener noreferrer" class="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
+                <img src="src/assets/images/whatsapp.png" alt="WhatsApp" class="w-6 h-6" />
+              </a>
+            </nav>
+          </div>
+        </div>
+        <div class="w-full xl:w-[1128px] min-h-8 pt-6 inline-flex justify-between items-center">
+          <div class="flex-1 inline-flex flex-col justify-start items-start">
+            <div class="self-stretch flex flex-col justify-start items-start">
+              <div class="self-stretch justify-center text-neutral-800 text-base font-normal font-['Poppins'] leading-normal">© Copyright 2024 - Alpes BMW. Todos os direitos reservados. </div>
+            </div>
+          </div>
+          <div class="px-3 pb-1 flex justify-start items-center">
+            <div class="px-4 py-1 flex justify-center items-center gap-2.5">
+              <div class="text-center justify-start text-bmw-gray03 text-xs font-normal font-['Poppins'] leading-none tracking-tight">Feito por:</div>
+              <img src="src/assets/images/logo-alpes 2 (1).svg" alt="alpesone" class="w-20 h-3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/main.js" defer></script>
+  </body>
+</html>
